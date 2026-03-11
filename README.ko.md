@@ -27,7 +27,7 @@ cd my-bot
 # 2. 의존성 설치
 npm install
 
-# 3. 환경 설정
+# 3. 환경 설정 (자세한 가이드: docs/TELEGRAM_SETUP.md)
 cp .env.example .env
 # .env 편집 → @BotFather에서 받은 BOT_TOKEN 입력
 
@@ -60,9 +60,8 @@ npm run dev
 │   │   └── setup.yml             # 첫 사용 시 체크리스트 자동 생성
 │   └── PULL_REQUEST_TEMPLATE.md
 ├── docs/
-│   ├── BOT_SETUP.md              # BotFather 설정 가이드
-│   ├── RAILWAY_DEPLOY.md         # Railway 배포 가이드
-│   └── FLY_DEPLOY.md             # Fly.io 배포 가이드
+│   ├── TELEGRAM_SETUP.md         # BotFather 설정 가이드
+│   └── DEPLOY_GUIDE.md           # Railway & Fly.io 배포 가이드
 └── package.json
 ```
 
@@ -113,7 +112,7 @@ npm run dev
 | `RAILWAY_TOKEN` | Railway API 토큰 |
 | `RAILWAY_SERVICE_ID` | 대상 서비스 ID |
 
-자세한 설정은 **[docs/RAILWAY_DEPLOY.md](docs/RAILWAY_DEPLOY.md)** 참고.
+자세한 설정은 **[docs/DEPLOY_GUIDE.md](docs/DEPLOY_GUIDE.md)** 참고.
 
 #### Fly.io (`cd-fly.yml`)
 
@@ -121,7 +120,7 @@ npm run dev
 |--------|------|
 | `FLY_API_TOKEN` | Fly.io 배포 토큰 |
 
-자세한 설정은 **[docs/FLY_DEPLOY.md](docs/FLY_DEPLOY.md)** 참고.
+자세한 설정은 **[docs/DEPLOY_GUIDE.md](docs/DEPLOY_GUIDE.md)** 참고.
 
 ## 개발
 
