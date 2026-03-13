@@ -79,7 +79,7 @@ npm run dev
 - **Docker** — Production Dockerfile + dev compose with hot reload
 - **Polling & Webhook** — Long polling by default, webhook mode via env var
 - **Version management** — `npm run version:patch/minor/major` to bump `package.json`
-- **Dev mode** — `npm run dev` for live reload with nodemon
+- **Dev mode** — `npm run dev` for live reload with `node --watch`
 - **Starter code** — `/start` + `/help` commands, echo handler, modular structure
 - **Deploy guides** — Step-by-step docs for BotFather, Railway, and Fly.io
 - **Template setup** — Auto-creates setup checklist issue on first use

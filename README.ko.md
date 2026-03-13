@@ -79,7 +79,7 @@ npm run dev
 - **Docker** — 프로덕션 Dockerfile + 핫 리로드 개발 compose
 - **폴링 & 웹훅** — 기본은 롱 폴링, 환경변수로 웹훅 모드 전환
 - **버전 관리** — `npm run version:patch/minor/major`
-- **개발 모드** — `npm run dev`로 nodemon 라이브 리로드
+- **개발 모드** — `npm run dev`로 `node --watch` 라이브 리로드
 - **스타터 코드** — `/start` + `/help` 커맨드, 에코 핸들러, 모듈러 구조
 - **배포 가이드** — BotFather, Railway, Fly.io 단계별 문서
 - **템플릿 셋업** — 첫 사용 시 체크리스트 이슈 자동 생성
