@@ -1,5 +1,8 @@
 FROM node:22-alpine
 
+# The base image bundles vulnerable node-tar; retain npm with a patched toolchain.
+RUN npm install --global npm@11.19.1 --ignore-scripts && npm cache clean --force
+
 ENV NODE_ENV=production \
     HEALTH_PORT=3000
 
