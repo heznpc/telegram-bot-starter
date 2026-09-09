@@ -59,3 +59,11 @@ docker-compose.yml → Local dev
 - grammY framework (lightweight Telegram bot library)
 - Polling for local dev, webhook for production
 - `config.js` validates BOT_TOKEN at startup (fails fast)
+
+## Fleet CI policy
+
+Common runtime, audit, license, secret-scan and CodeQL policy lives in
+[starter-series/.github](https://github.com/starter-series/.github).
+Keep deliverable checks in `.github/actions/validate/action.yml`.
+Weekly health and failures are aggregated in the central Fleet maintenance workflow;
+this repository retains a manual maintenance runner without issue automation.

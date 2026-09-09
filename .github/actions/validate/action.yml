@@ -1,0 +1,21 @@
+name: Validate telegram-bot-starter
+description: Deliverable-specific checks; runtime and security policy live in starter-series/.github.
+runs:
+  using: composite
+  steps:
+  - name: Lint
+    run: npm run lint
+    shell: bash
+  - name: Build
+    run: npm run build
+    shell: bash
+  - name: Test
+    run: npm test
+    shell: bash
+  - name: Docker build verification
+    run: docker build -t telegram-bot-starter:test .
+    shell: bash
+  - name: Scan image for vulnerabilities
+    uses: starter-series/.github/.github/actions/image-security@main
+    with:
+      image: telegram-bot-starter:test
